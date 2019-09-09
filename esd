@@ -1,0 +1,32 @@
+<section class="content-section section first-section">
+                                <p> 
+                                    Ayant débuté le développement web en autodidacte, l'apprentissage d'une nouvelle technologie ne me fait pas peur, le challenge non plus. Je suis actuellement entrain de suivre une formation diplômante afin d’acquérir des nouvelles compétences dans la programmation.
+                                </p>
+                                <div><a class="fleche1" href=""><img src="logo/icons8-flèche-droite-50.png" alt=""></a></div>
+                            </section>
+
+                            <section class="content-section section second-section">
+                                <div><a class="fleche2" href=""><img src="logo/icons8-flèche-gauche-50.png" alt=""></a></div>
+                                <p>
+                                    Mes diverses expériences professionnelles passées m'ont appris l'autonomie, la proactivité et le goût du travail. Engagé pour mon prochain, j'ai également pu présider une association de développement local et développé des projets de lutte contre le décrochage scolaire.
+                                </p>
+                            </section>
+
+<div id="content-principal">
+    <div class="content-section firstsection">
+        <p>
+            Ayant débuté le développement web en autodidacte, l'apprentissage d'une nouvelle technologie ne me fait pas peur, le challenge non plus. Je suis actuellement entrain de suivre une formation diplômante afin d’acquérir des nouvelles compétences dans la programmation.
+        </p>
+        <div class="nextBtn"><a class="firstfleche" href="#"><img src="logo/icons8-flèche-droite-50.png" alt=""></a></div>
+    </div>
+
+    <div class="secondsection">
+        <div class="prevBtn"><a class="secondfleche" href="#"><img src="logo/icons8-flèche-gauche-50.png" alt=""></a></div>
+            <div>
+                <p>
+                    Mes diverses expériences professionnelles passées m'ont appris l'autonomie, la proactivité et le goût du travail. Engagé pour mon prochain, j'ai également pu présider une association de développement local et développé des projets de lutte contre le décrochage scolaire.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
