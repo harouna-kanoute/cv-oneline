@@ -4,124 +4,327 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="media-query.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/madia-query.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <title>H@rouna Kanoute</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="jquery-3.4.1.min.js"></script>
+        <title>Harouna Kanoute</title>
     </head>
-    <body>
-        <div id="content-principal">
-            <main>
-                <header>
-                    <a href="index.html" id="logo">HR</a>
-                    <div id="menu">
-                        <div id="menu-content">
-                            <nav class="nav">
-                                <ul>
-                                    <li><a href="index.html" class="home"></a></li>
-                                    <li><a href="#parcours" class="parcours">Parcours</a></li>
-                                    <li><a href="skills.html">Skills</a></li>
-                                    <li><a href="formation.html" class="formation">Formations</a></li>
-                                    <li><a href="passions.html" class="passion" >Passions</a></li>
-                                    <button class="contact"><a href="contact.html">Contact</a></button>
-                                </ul>
-                                <div class="menu-socio">
-                                    <a href="#"><img src="asset/facebook.png" alt="logo facebook"/></a>
-                                    <a href="https://www.linkedin.com/in/harouna-k/" target="_blank"><img src="asset/link.png" alt="logo linkdine"/></a>
-                                    <a href="#"><img src="asset/instant.png" alt="logo instangram"/></a>
-                                    <a href="https://github.com/harouna-kanoute" target="blank"><img src="asset/github (1).png" alt="logo github"/></a>
-                                </div>
-                            </nav>
-                        </div>
-                        <button id="menu-button">&#9776;</button>
-                        <div id="menu-sidebar">
-                            <div id="menu-sidebar-header"><img src="asset/mon-img.png" alt="ma photo"></div>
-                            <div id="menu-sidebar-body"></div>
-                        </div>
-                        <div id="menu-overlay"></div>
-                    </div>
-                </header>
-
-                <!----------------------------------------------------------CONTENTE-------------------------------------->
-                
-                <div id="content-block">
-                    <div class="block-home">
-                        <div class="socio">
-                            <a href="https://www.linkedin.com/in/harouna-k/" target="blank"><img src="logo/logo-linkedin.png" alt=""></a>
-                            <a href="" target="blank"><img src="logo/logo-github.png" alt=""></a>
-                            <a href="" target="blank"><img src="logo/logo-facebook.png" alt=""></a>
-                        </div>
-                        <div class="content-about">
-                            <h1>HAROUNA KANOUTE</h1>
-                            <h2>Developpeur Web</h2>
-
-                            <div id="content-principal">
-                                <div class="content-section firstsection">
-                                    <div class="sectionParagraphe">
-                                        <p class="para">
-                                            Ayant débuté le développement web en autodidacte, l'apprentissage d'une nouvelle technologie ne me fait pas peur, le challenge non plus. Je suis actuellement entrain de suivre une formation diplômante afin d’acquérir des nouvelles compétences dans la programmation.
-                                        </p>
-                                    </div>
-                                    <div class="nextBtn">
-                                        <a class="firstfleche" href="#"><img src="logo/icons8-flèche-droite-50.png" alt=""></a>
-                                    </div>
-                                </div>
-
-                                <div class="content-section secondsection">
-                                    <div class="nextBtn">
-                                        <a class="secondfleche" href="#"><img src="logo/icons8-flèche-gauche-50.png" alt=""></a>
-                                    </div>
-                                    <div class="sectionParagraphe">
-                                        <p class="para">
-                                            Mes diverses expériences professionnelles passées m'ont appris l'autonomie, la proactivité et le goût du travail. Engagé pour mon prochain, j'ai également pu présider une association de développement local et développé des projets de lutte contre le décrochage scolaire.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="content-btn">
-                                <button class="btn downloag"><a href="document/CV.pdf" target="blank">Télécharger le cv</a></button>
-                            </div>
-                        </div>
-                        <div class="content-img">
-                            <img src="asset/homme.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                            
-                <!----------------------------------------------------------CONTENTE-------------------------------------->
-
-                <!----------------------------------------------------------SECTION PAGE-------------------------------------->
-
-                <div class="content-page">
-                    <div class="parcours block-page">
-                        <img src="asset/for1.png" alt="">
-                        <h3>Mes Parcours</h3>
-                    </div>
-                    <div class="skills block-page">
-                        <img src="asset/for1.png" alt="">
-                        <h3>Mes Competences</h3>
-                    </div>
-                    <div class="formation block-page">
-                        <img src="asset/for1.png" alt="">
-                        <h3>Mes Formations</h3>
-                    </div>
-                    <div class="passion block-page">
-                        <img src="asset/for1.png" alt="">
-                        <h3>Mes Passions</h3>
-                    </div>
-                    <div class="contact block-page">
-                        <img src="asset/for1.png" alt="">
-                        <h3>Me Contacter</h3>
-                    </div>
-                </div>
-                
-                <!----------------------------------------------------------SECTION PAGE-------------------------------------->
-
-            </main>
-        </div>
+    <body>  
+        <header id="header">
+            <div class="name headerPropos">
+                <h1 data-aos="fade-up" data-aos-offset="300">Harouna</h1>
+                <p data-aos="fade-up" data-aos-offset="200">Developpeur Application Web <br> Front End</p>
+                <a href="#scrollToNav"><img src="icones/Vector.png" alt=""></a>
+            </div>
+        </header>
         
-        <script src="script.js"></script>
+        <nav class="navbar one-page-nav" id="scrollToNav">
+            <nav class="wrapper">
+                <div class="logo"><a href="index.html">HR</a></div><!-- Logo -->
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="label-toggle"></label>
+                </input>
+                <ul id="navigation" class="nav" >            
+                    <a href="#competence" data-scroll="services"><li>Competences</li></a>
+                    <a href="#experience" data-scroll="about"><li>Expériences</li></a>
+                    <a href="#formation" data-scroll="testimonials"><li>Formations</li></a>
+                    <a href="#realistation" data-scroll="testimonials"><li>Réalisation</li></a>
+                    <a href="#contact" data-scroll="contact"><li>Contact</li></a>
+                    <a href="#header"><li class="to-top">To Top</li></a>
+                </ul>
+            </nav>
+        </nav>        
+<!----------------------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------------------------------------------->      
+        
+        <main>
+            <section class="section1">
+                <h2 data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">A Propos</h2>
+                <div class=" apropos"> 
+                    <div class="profilImg" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <img class="img" src="Asset/imgprofil.jpg" alt="">
+                    </div>
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <p>
+                            Ayant débuté le développement web en autodidacte, l'apprentissage d'une nouvelle technologie ne me fait pas peur, le challenge non plus.
+
+                            Actuellement en formation afin de professionnaliser mes compétences, mes expériences passées m'ont appris l'autonomie, la proactivité et le goût du travail.
+                                    
+                            Engagé, j'ai également présidé une association de développement local et développé des projets de lutte contre le décrochage scolaire. 
+                        </p>
+                        <div class="btnContent">
+                            <a href="#contact">Contact</a>
+                            <a href="#contact">Telecharger mon cv</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!----------------------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------------------------------------------->               
+            <section id="competence" class="section2" data-aos="fade-up" data-aos-offset="200">
+                <h2 data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">Competences</h2>
+                <div class="block-competences">
+                    <div class="front competences" data-aos="fade-right" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                        <img src="icones/front1 (1).gif" alt="">
+                        <div class="competences-text">
+                            <h3>Language</h3>
+                            <span>Html / Css</span><br>
+                            <span>Css</span><br>
+                            <span>JavaScript</span><br>
+                        </div>
+                    </div>
+                    <div class="design competences" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                        <img src="icones/front1 (2).gif" alt="">
+                        <div class="competences-text">
+                            <h3>Framework / Librairie</h3>
+                            <span>jQuery</span><br>
+                            <span>Vuejs</span><br>
+                            <span>Bootstrap</span><br>
+                            
+                        </div>
+                    </div>
+                    <div class="outils competences" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <img src="icones/outil1.gif" alt="">
+                        <div class="competences-text">
+                            <h3>Outils / Design</h3>
+                            <span>Photoshop</span><br>
+                            <span>Illustrator</span><br>
+                            <span>Figma</span><br>
+                            <span>Git / Github</span><br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!----------------------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------------------------------------------->           
+              
+            <section class="section8" id="experience">
+                <h2 data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">Experiences</h2>
+                <div class="containerCard">
+                    <div class="card2" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="entrepriseInfo">
+                            <h2>Bakhtech</h2>
+                            <p>Stage <span>11 mars - 11 mai 2019</span></p>
+                            <img src="" alt="">
+                            <a href="#">Visitez</a>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Découverte de l'accessibilité Numérique.
+                                Création des sites vitrines, site de vente ligne pour <br> <a href="https://bakhtech.com/" target="blank">Bakhtech</a> <br> <a href="http://dysso.org/" target="blank">Dysso</a> <br> <a href="http://tyresias.fr" target="blank">Tyresias</a> <br><a href="https://www.umoja-shoes.com/" target="blank">Umoja</a>.
+                                
+                            </p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="card2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="entrepriseInfo">
+                            <h2>Nmf Immobilier</h2>
+                            <p>Agent Immobilier <span> Avril 2013 - Aout 2017</span></p>
+                            <img src="" alt="">
+                            <a href="#">Visitez</a>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Réalisation d'un site de vente en ligne pour l'entreprise polonaise KVO Group.
+                                -> Visiter le site.
+                                Spécialisé dans la vente de produits pour bébé.
+                                Site réalisé grâce à Prestashop.
+                                Refonte complète d'un ancien site (design, logo, nom, produits...), import des produits, mise en place des modules de paiement, gestion de la base de données.
+                                Création d'images sous photoshop, retouches, mise en page soignée, respect du thème demandé dans le cahier des charges (couleurs rose et bleue, une vue d'ensemble avec beaucoup de couleurs et pas de surcharge).
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerCard">
+                    <div class="card2" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="entrepriseInfo">
+                            <h2>Studio B5</h2>
+                            <p>Stage <span>11 mars - 11 mai 2019</span></p>
+                            <img src="" alt="">
+                            <a href="#">Visitez</a>
+                        </div>
+                        <div class="description">
+                            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</p>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="card2" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div class="entrepriseInfo">
+                            <h2>Agent de saisie</h2>
+                            <p>Stage <span>11 mars - 11 mai 2019</span></p>
+                            <img src="" alt="">
+                            <a href="#">Visitez</a>
+                        </div>
+                        <div class="description">
+                            <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!----------------------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------------------------------------------->
+
+            <section class="section7" id="formation">
+                <h2 data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">Formations</h2>
+                <div class="block-section experience">
+                    <div class="card" data-aos="fade-up" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                        <div>
+                        <img src="icones/formation1.svg" alt="">
+                        </div>
+                        <div class="formation">
+                            <span>Novembre 2018</span>
+                            <span>Juin 2019</span>
+                            <h3>Developpeur Application Web / <strong>CNAM</strong> </h3>
+                            <strong>BAC+1</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-in-sine">
+                        <div>
+                            <img src="icones/formation2.svg" alt="">
+                        </div>
+                        <div class="formation">
+                            <span>Septembre 2018</span>
+                            <span>Octobre 2018</span>
+                            <h3>Developpeur Web / SIMPLON</h3>
+                            <strong>ATTESTATION</strong>
+                            <p>Html / Css</p>
+                            <p>Photoshop</p>
+                            <p>Illustrator</p>
+                            <p>Scatch</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                        <div>
+                            <img src="icones/formation3.svg" alt="">
+                        </div>
+                        <div class="formation">
+                            <span>Avril 2010</span>
+                            <span>Juin 2010</span>
+                            <h3>Mise à Niveau / CLEA</h3>
+                            <strong>ATTESTATION</strong>
+                            <p>Français</p>
+                            <p>Mathematique</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-up" data-aos-offset="400" data-aos-easing="ease-in-sine">
+                        <div>
+                            <img src="icones/formation4.svg" alt="">
+                        </div>
+                        <div class="formation">
+                            <span>Avril 2010</span>
+                            <span>Juin 2010</span>
+                            <h3>Bureautique / CCGD</h3>
+                            <strong>ATTESTATION</strong>
+                            <p>Word</p>
+                            <p>Excel</p>
+                            <p>PowerPoint</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!----------------------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------------------------------------------->
+            <section id="realistation" class="section5">
+                <h2 data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">REALISATIONS</h2>
+                            
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="Asset/mode-africa.png" style="width:100%">
+                        <div class="text">Caption TextCaption TextCaption TextCaption TextCaption TextCaption TextCaption TextCaption TextCaption Text</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="Asset/lefalaf.png" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="Asset/nike.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+                    
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </section>
+<!----------------------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------------------------------------------->            
+            <section class="section6" id="contact">
+                <h2 data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">Contact</h2>
+                <div class="entronsContact">
+                    <P data-aos="zoom-in" data-aos-offset="150" data-aos-easing="ease-in-sine">Je suis disponible pour toute réalisation d'un projet ou pour la collaboration à celui-ci.
+                    </P>
+                    <a data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine"  href="#form">Contactez moi</a>
+                </div>
+                <div class="formulaire" id="form">
+                    <form action="" method="post" data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine">
+                        <input type="text" placeholder="Prenom et Nom">
+                        <input type="email" name="" id="" placeholder="Email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Tapez votre message"></textarea>
+                        <input class="submit" type="submit" value="Envoyer ">
+                    </form>
+                    <div class="">
+
+                    </div>
+                </div>
+                
+                <div class="followMe">
+                    <a data-aos="zoom-in" data-aos-offset="100" data-aos-easing="ease-in-sine" href="https://www.linkedin.com/in/harouna-k/"><img class="iconSocio" src="Asset/linkedin.png" alt="logo linkedin"></a>
+                    <a data-aos="zoom-in" data-aos-offset="120" data-aos-easing="ease-in-sine" href="https://github.com/harouna-kanoute" target="blank"><img class="iconSocio" src="Asset/github1.svg" alt="logo github"></a>
+                    <a data-aos="zoom-in" data-aos-offset="140" data-aos-easing="ease-in-sine" href="https://www.instagram.com/?hl=fr" target="blank"><img class="iconSocio" src="Asset/instagram1.png" alt="logo instagram"></a>
+                    <a data-aos="zoom-in" data-aos-offset="160" data-aos-easing="ease-in-sine" href="https://www.facebook.com/" target="blank"><img class="iconSocio" src="Asset/facebook.png" alt="logo facebook"></a>
+                </div>
+            </section> 
+<!----------------------------------------------------------------------------------------------------------------->
+
+<!----------------------------------------------------------------------------------------------------------------->          
+        </main>
+        
+        <footer>
+            <div><p>&copy; 2019 <span>Harouna Kanoute</span><p></div>
+            <div><a href="mailto:harounakanoute@hotmail.com"><span>&#9993;</span> :  harounakanoute@hotmail.com</a></div>
+            <div><span>&#9742;</span> :  07 53 22 00 00</a></div>
+            <div class="haut"><a href="#header"><img class="top" src="Asset/Frame.svg" ></a></div>
+        </footer>
+        
+        <script src="script/script.js"></script>
+        <script src="jquery/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+            
     </body>
 </html>
